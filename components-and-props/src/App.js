@@ -159,4 +159,80 @@ import './App.css';
 //   }
 // }
 
+// (E)
+// function Box(props) {
+//   return (
+//     <div className='box'>
+//       {props.letter}
+//     </div>
+//   )
+// }
+
+// function Row() {
+//   const firstLetter = ['X', 'O'][Math.floor(Math.random() * 2)]
+//   const secondLetter = ['X', 'O'][Math.floor(Math.random() * 2)]
+//   const thirdLetter = ['X', 'O'][Math.floor(Math.random() * 2)]
+  
+//   return (
+//     <div className='row'>
+//       <Box letter={firstLetter} />
+//       <Box letter={secondLetter}/>
+//       <Box letter={thirdLetter}/>
+//     </div>
+//   )
+// }
+
+// function App() {
+//   return (
+//     <div>
+//       <Row />
+//       <Row />
+//       <Row />
+//     </div>
+//   )
+// }
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Row />
+        <Row />
+        <Row />
+      </div>
+    )
+  }
+}
+
+class Row extends React.Component {
+  randomLetter() {
+    return ['X', 'O'][Math.floor(Math.random() * 2)]
+  }
+
+  render() {
+    // const firstLetter = ['X', 'O'][Math.floor(Math.random() * 2)]
+    // const secondLetter = ['X', 'O'][Math.floor(Math.random() * 2)]
+    // const thirdLetter = ['X', 'O'][Math.floor(Math.random() * 2)]
+
+    
+    return (
+      <div>
+        <Box letter={this.randomLetter()} />
+        <Box letter={this.randomLetter()} />
+        <Box letter={this.randomLetter()} />
+      </div>
+    )
+  }
+}
+
+class Box extends React.Component {
+  render() {
+    return (
+      <div className='box'>
+        {this.props.letter}
+      </div>
+    )
+  }
+}
+
 export default App;
