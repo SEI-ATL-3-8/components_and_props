@@ -223,7 +223,7 @@ In your groups, you're going to build out a menu from this mockup:
 
 ![menu mockup](./assets/menu.jpg)
 
-Before we get started, we want to identify which components we will need, much like how when we do HTML/CSS mockup exercises, we scan the structure of the page before writing code. This process is mostly drawing boxes over the mockup to represent the various components.
+Before we get started, we want to identify which components we will need, much like how when we do HTML/CSS mockup exercises, we scan the structure of the page before writing code. This process is mostly drawing boxes over the mockup to represent the various components. Here's a helpful tool for scribbling on your images: https://screenshot.net/online-image-editor.html (you should bookmark this!)
 
 Style the menu to look as much like the mockup as you can, but don't worry about getting the fonts or background image perfect.
 
